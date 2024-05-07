@@ -1,4 +1,7 @@
+use std::time::Instant;
+
 fn main() {
-    println!("Hello, world!");
-    println!("test build");
+    let start = Instant::now();
+    let time = start.elapsed();
+    println!("time:{:?}", time);
 }
